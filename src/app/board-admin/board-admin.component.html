@@ -1,0 +1,60 @@
+
+<header>Bienvenue sur Ogate</header>
+
+<div class="sidebar">
+
+  <a  [class.active]="activeLink === 'home'" (click)="setPage('home')"><i class="fa-solid fa-house-user"></i> Home</a>
+  <a [class.active]="activeLink === 'document'" (click)="setPage('document')"><i class="fa-solid fa-book"></i> Documents</a>
+  <a [class.active]="activeLink === 'utilisateur'" (click)="setPage('utilisateur')"><i class="fa-solid fa-users"></i> Utilisateurs</a>
+  <a [class.active]="activeLink === 'pub'" (click)="setPage('pub')"><i class="fa-solid fa-upload"></i> Publicités</a>
+  <a [class.active]="activeLink === 'biens'" (click)="setPage('biens')"><i class="fa-solid fa-building-user"></i> Type de biens</a>
+  <a [class.active]="activeLink === 'partenaires'" (click)="setPage('partenaires')"><i class="fa-solid fa-handshake-simple"></i>  Partenaires</a>
+</div>
+
+<div class="content" *ngIf="page=='home'">
+  <h1>Bienvenue home</h1>
+  <div>
+  </div>
+</div>
+
+<div class="document" *ngIf="page=='document'">
+  <h1>Liste des documents</h1>
+</div>
+
+<div class="user" *ngIf="page=='utilisateur'">
+  <h1>Liste des utilisateurs</h1>
+  <br>
+  <br>
+  <table>
+    <tr class="tete">
+        <td>Nom et Prenoms</td>
+        <td>Username</td>
+        <td>Password </td>
+        <td>Operation</td>
+
+    </tr>
+    <tr>
+        <td>Back office Kono</td>
+        <td>backofficeadmin@ogate.com</td>
+        <td> admin@ogate</td>
+        <td class="bout"><button><i class="fa-solid fa-address-book"></i></button>&nbsp;
+          <button><i class="fa-solid fa-trash"></i></button></td>
+
+    </tr>
+    
+</table>
+  <br>
+  <button class="save"  routerLink="/ajout">Ajouter utilisateur</button>
+</div>
+
+<div class="pub" *ngIf="page=='pub'">
+  <h1>Les  publicites</h1>
+</div>
+
+<div class="biens" *ngIf="page=='biens'">
+  <h1>Bienvenue bien</h1>
+</div>
+
+<div class="patenaires" *ngIf="page=='partenaires'">
+  <h1>Bienvenue Partenaires</h1>
+</div>
