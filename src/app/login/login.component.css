@@ -76,3 +76,59 @@ input{
   color: black;
   
 }
+
+@media only screen and (max-width: 480px) {
+  .gauche, .droite {
+      width: 50%;
+  }
+
+  h1 {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  button {
+      font-size: 20px;
+      width: 200px;
+      height: 25px;
+      border-radius: 5px;
+  }
+
+  h5 {
+      font-size: 10px;
+      font-weight: bold;
+  }
+  img{
+      width: 150px;
+      height: 150px;
+  }
+  input{
+          width: 100px;
+          height: 30px;
+          border-radius: 5px;
+          border: 1px solid #000;
+          
+  }
+  label{
+      font-size: 15px;
+  }
+  .container {
+      display: flex;
+  }
+  button{
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 10px;
+      
+  }
+  header{
+    width: 100%;
+  }
+  placeholder{
+    font-size: 2px;
+  }
+  .oublie{
+      text-align:left;
+  }
+}
