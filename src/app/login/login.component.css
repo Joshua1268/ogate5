@@ -83,7 +83,7 @@ input{
   }
 
   h1 {
-      font-size: 20px;
+      font-size: 25px;
       font-weight: bold;
   }
 
@@ -95,7 +95,7 @@ input{
   }
 
   h5 {
-      font-size: 10px;
+      font-size: 15px;
       font-weight: bold;
   }
   img{
@@ -103,7 +103,7 @@ input{
       height: 150px;
   }
   input{
-          width: 100px;
+          width: 180px;
           height: 30px;
           border-radius: 5px;
           border: 1px solid #000;
@@ -116,19 +116,17 @@ input{
       display: flex;
   }
   button{
-      width: 100px;
+      width: 180px;
       height: 30px;
       border-radius: 5px;
-      font-size: 10px;
+      font-size: 20px;
       
   }
   header{
     width: 100%;
   }
-  placeholder{
-    font-size: 2px;
-  }
+
   .oublie{
-      text-align:left;
+      text-align:right;
   }
 }
